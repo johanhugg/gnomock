@@ -4,6 +4,7 @@
 
 # <div align="center">Gnomock – tests without mocks</div>
 
+test
 🏗️ Spin up entire dependency stack
 
 🎁 Setup initial dependency state – easily!
