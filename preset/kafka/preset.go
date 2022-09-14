@@ -97,6 +97,7 @@ func (p *P) Options() []gnomock.Option {
 		gnomock.WithHealthCheck(p.healthcheck),
 		gnomock.WithEnv("KAFKA_AUTO_CREATE_TOPICS_ENABLE=true"),
 		gnomock.WithEnv("ADV_HOST=127.0.0.1"),
+		gnomock.WithEnv("KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT,DOCKER:PLAINTEXT"),
 		gnomock.WithEnv(fmt.Sprintf("BROKER_PORT=%d", brokerPort)),
 		gnomock.WithEnv("RUNTESTS=0"),
 		gnomock.WithEnv("RUNNING_SAMPLEDATA=0"),
