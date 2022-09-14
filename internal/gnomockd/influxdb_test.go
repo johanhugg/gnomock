@@ -13,9 +13,9 @@ import (
 
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/domain"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/gnomockd"
-	_ "github.com/orlangure/gnomock/preset/influxdb"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/gnomockd"
+	_ "github.com/johanhugg/gnomock/preset/influxdb"
 	"github.com/stretchr/testify/require"
 )
 

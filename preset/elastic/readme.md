@@ -1,6 +1,6 @@
 # Gnomock Elasticsearch
 
-Gnomock Elasticsearch is a [Gnomock](https://github.com/orlangure/gnomock)
+Gnomock Elasticsearch is a [Gnomock](https://github.com/johanhugg/gnomock)
 preset for running tests against a real Elasticsearch container, without mocks.
 
 ```go
@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/elastic/go-elasticsearch/v7"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/elastic"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/elastic"
 	"github.com/stretchr/testify/require"
 )
 
@@ -67,4 +67,3 @@ func TestPreset(t *testing.T) {
 	require.Equal(t, 0, out.Hits.Total.Value)
 }
 ```
-

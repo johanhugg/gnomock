@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 const (

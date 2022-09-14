@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/orlangure/gnomock"
+	"github.com/johanhugg/gnomock"
 )
 
 // NewPresetNotFoundError is returned when an invalid/unknown preset name was

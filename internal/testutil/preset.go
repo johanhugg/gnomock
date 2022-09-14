@@ -4,8 +4,8 @@ package testutil
 import (
 	"context"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/health"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/health"
 )
 
 // Test preset uses the following values:

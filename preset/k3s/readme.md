@@ -1,7 +1,7 @@
 # Gnomock Lightweight Kubernetes (k3s)
 
 Gnomock Lightweight Kubernetes (k3s) is a
-[Gnomock](https://github.com/orlangure/gnomock) preset for running tests
+[Gnomock](https://github.com/johanhugg/gnomock) preset for running tests
 against a real lightweight kubernetes cluster (k3s), without mocks.
 
 ```go
@@ -11,8 +11,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/k3s"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/k3s"
 	"github.com/stretchr/testify/require"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -71,4 +71,3 @@ func TestPreset(t *testing.T) {
 	require.Equal(t, "gnomock", pods.Items[0].Name)
 }
 ```
-

@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/orlangure/gnomock"
+	"github.com/johanhugg/gnomock"
 )
 
 var errConflict = fmt.Errorf("409: conflict")

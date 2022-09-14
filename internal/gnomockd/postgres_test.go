@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/gnomockd"
-	_ "github.com/orlangure/gnomock/preset/postgres"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/gnomockd"
+	_ "github.com/johanhugg/gnomock/preset/postgres"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/gocql/gocql"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/cassandra"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/cassandra"
 	"github.com/stretchr/testify/require"
 )
 

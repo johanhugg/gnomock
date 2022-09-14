@@ -11,8 +11,8 @@ import (
 	"fmt"
 
 	"github.com/gocql/gocql"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 // By default, Cassandra containers will use these values.

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/k3s"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/k3s"
 	"github.com/stretchr/testify/require"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

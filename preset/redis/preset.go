@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	redisclient "github.com/go-redis/redis/v7"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 const defaultVersion = "6.0.9"

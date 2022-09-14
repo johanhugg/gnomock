@@ -1,6 +1,6 @@
 # Gnomock Cassandra
 
-Gnomock Cassandra is a [Gnomock](https://github.com/orlangure/gnomock) preset for
+Gnomock Cassandra is a [Gnomock](https://github.com/johanhugg/gnomock) preset for
 running tests against a real Cassandra container, without mocks.
 
 ```go
@@ -47,4 +47,3 @@ func testPreset(version string) func(t *testing.T) {
 	}
 }
 ```
-

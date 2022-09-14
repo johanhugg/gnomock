@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/gnomockd"
-	_ "github.com/orlangure/gnomock/preset/cockroachdb"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/gnomockd"
+	_ "github.com/johanhugg/gnomock/preset/cockroachdb"
 	"github.com/stretchr/testify/require"
 )
 

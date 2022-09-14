@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/testutil"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/testutil"
 	"github.com/stretchr/testify/require"
 )
 
@@ -191,7 +191,7 @@ func TestGnomock_withCommand(t *testing.T) {
 	require.NoError(t, r.Close())
 }
 
-// See https://github.com/orlangure/gnomock/issues/302
+// See https://github.com/johanhugg/gnomock/issues/302
 func TestGnomock_witUseLocalImagesFirst(t *testing.T) {
 	t.Parallel()
 

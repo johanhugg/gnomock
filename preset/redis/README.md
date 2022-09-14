@@ -1,6 +1,6 @@
 # Gnomock Redis
 
-Gnomock Redis is a [Gnomock](https://github.com/orlangure/gnomock) preset for
+Gnomock Redis is a [Gnomock](https://github.com/johanhugg/gnomock) preset for
 running tests against a real Redis container, without mocks.
 
 ```go
@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	redisclient "github.com/go-redis/redis/v7"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/redis"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/redis"
 )
 
 func ExamplePreset() {

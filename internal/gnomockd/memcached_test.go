@@ -11,9 +11,9 @@ import (
 	"testing"
 
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/gnomockd"
-	_ "github.com/orlangure/gnomock/preset/memcached"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/gnomockd"
+	_ "github.com/johanhugg/gnomock/preset/memcached"
 	"github.com/stretchr/testify/require"
 )
 

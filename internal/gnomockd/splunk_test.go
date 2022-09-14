@@ -12,9 +12,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/gnomockd"
-	"github.com/orlangure/gnomock/preset/splunk"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/gnomockd"
+	"github.com/johanhugg/gnomock/preset/splunk"
 	"github.com/stretchr/testify/require"
 )
 

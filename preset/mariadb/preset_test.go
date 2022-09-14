@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/mariadb"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/mariadb"
 	"github.com/stretchr/testify/require"
 )
 

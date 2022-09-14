@@ -12,8 +12,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/bsonrw"
 	mongodb "go.mongodb.org/mongo-driver/mongo"

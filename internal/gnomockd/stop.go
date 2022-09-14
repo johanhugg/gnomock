@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/errors"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/errors"
 )
 
 func stopHandler() http.HandlerFunc {

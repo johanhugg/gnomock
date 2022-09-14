@@ -11,8 +11,8 @@ import (
 	"sync"
 
 	mysqldriver "github.com/go-sql-driver/mysql"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 const (

@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/orlangure/gnomock"
+	"github.com/johanhugg/gnomock"
 )
 
 func main() {

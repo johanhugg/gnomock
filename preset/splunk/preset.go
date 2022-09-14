@@ -14,8 +14,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 const (

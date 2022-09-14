@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 	_ "github.com/lib/pq" // postgres driver
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
 )
 
 const (

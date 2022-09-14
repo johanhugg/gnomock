@@ -1,6 +1,6 @@
 # Gnomock Kafka
 
-Gnomock Kafka is a [Gnomock](https://github.com/orlangure/gnomock) preset for
+Gnomock Kafka is a [Gnomock](https://github.com/johanhugg/gnomock) preset for
 running tests against a real Kafka event streaming platform, without mocks.
 
 ```go
@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/kafka"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/kafka"
 	kafkaclient "github.com/segmentio/kafka-go"
 	"github.com/stretchr/testify/require"
 )

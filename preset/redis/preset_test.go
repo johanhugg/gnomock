@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	redisclient "github.com/go-redis/redis/v7"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/redis"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/redis"
 	"github.com/stretchr/testify/require"
 )
 

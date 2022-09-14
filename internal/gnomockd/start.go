@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/errors"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/errors"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 func startHandler() http.HandlerFunc {

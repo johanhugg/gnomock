@@ -3,16 +3,16 @@ info:
   title: gnomock
   description: >
     `gnomock` is an HTTP wrapper for
-    [Gnomock](https://github.com/orlangure/gnomock) integration and end-to-end
+    [Gnomock](https://github.com/johanhugg/gnomock) integration and end-to-end
     testing toolkit. It allows to use Gnomock outside of Go ecosystem. Not all
     Gnomock features exist in this wrapper, but official presets, as well as
     basic general configuration, are supported.
   version: 1.20.0
   contact:
-    url: https://github.com/orlangure/gnomock/
+    url: https://github.com/johanhugg/gnomock/
   license:
     name: MIT
-    url: https://github.com/orlangure/gnomock/blob/master/LICENSE
+    url: https://github.com/johanhugg/gnomock/blob/master/LICENSE
 
 paths:
   /start/localstack:
@@ -24,14 +24,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/localstack-request'
+              $ref: "#/components/schemas/localstack-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -44,14 +44,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/mongo-request'
+              $ref: "#/components/schemas/mongo-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -64,14 +64,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/mssql-request'
+              $ref: "#/components/schemas/mssql-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -84,14 +84,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/mysql-request'
+              $ref: "#/components/schemas/mysql-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -104,14 +104,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/mariadb-request'
+              $ref: "#/components/schemas/mariadb-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/postgres:
@@ -123,14 +123,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/postgres-request'
+              $ref: "#/components/schemas/postgres-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/redis:
@@ -142,14 +142,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/redis-request'
+              $ref: "#/components/schemas/redis-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/memcached:
@@ -161,14 +161,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/memcached-request'
+              $ref: "#/components/schemas/memcached-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/splunk:
@@ -180,14 +180,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/splunk-request'
+              $ref: "#/components/schemas/splunk-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/rabbitmq:
@@ -199,14 +199,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/rabbitmq-request'
+              $ref: "#/components/schemas/rabbitmq-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/kafka:
@@ -218,14 +218,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/kafka-request'
+              $ref: "#/components/schemas/kafka-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/elastic:
@@ -237,14 +237,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/elastic-request'
+              $ref: "#/components/schemas/elastic-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
   /start/kubernetes:
@@ -259,14 +259,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/kubernetes-request'
+              $ref: "#/components/schemas/kubernetes-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -279,14 +279,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/cockroachdb-request'
+              $ref: "#/components/schemas/cockroachdb-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -299,14 +299,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/influxdb-request'
+              $ref: "#/components/schemas/influxdb-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
@@ -319,18 +319,18 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/cassandra-request'
+              $ref: "#/components/schemas/cassandra-request"
       responses:
-        '200':
-          $ref: '#/components/responses/container-created'
-        '400':
-          $ref: '#/components/responses/invalid-configuration'
-        '500':
-          $ref: '#/components/responses/start-failed'
+        "200":
+          $ref: "#/components/responses/container-created"
+        "400":
+          $ref: "#/components/responses/invalid-configuration"
+        "500":
+          $ref: "#/components/responses/start-failed"
       tags:
         - presets
 
-### /start/preset
+  ### /start/preset
 
   /stop:
     post:
@@ -341,22 +341,22 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/stop-request'
+              $ref: "#/components/schemas/stop-request"
       responses:
-        '200':
+        "200":
           description: Container stopped successfully
-        '400':
+        "400":
           description: Invalid stop request
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/invalid-stop-request'
-        '500':
+                $ref: "#/components/schemas/invalid-stop-request"
+        "500":
           description: Stop failed
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/stop-failed'
+                $ref: "#/components/schemas/stop-failed"
       tags:
         - presets
 
@@ -374,7 +374,7 @@ components:
           type: string
           default: localhost
         ports:
-          $ref: '#/components/schemas/named-ports'
+          $ref: "#/components/schemas/named-ports"
       description: >
         This object is a Gnomock wrapper of a regular docker container. It uses
         the same container ID as docker, and adds bound ports information.
@@ -479,7 +479,7 @@ components:
           type: boolean
           description: If possible to avoid hitting the Docker Hub pull rate limit.
         custom_named_ports:
-          $ref: '#/components/schemas/named-ports'
+          $ref: "#/components/schemas/named-ports"
         auth:
           type: string
           description: >
@@ -497,9 +497,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/localstack'
+          $ref: "#/components/schemas/localstack"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Localstack and general configuration.
 
@@ -562,9 +562,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/mongo'
+          $ref: "#/components/schemas/mongo"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes MongoDB and general configuration.
 
@@ -597,9 +597,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/mssql'
+          $ref: "#/components/schemas/mssql"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Microsoft SQL Server and general configuration.
 
@@ -649,9 +649,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/mysql'
+          $ref: "#/components/schemas/mysql"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes MySQL and general configuration.
 
@@ -700,9 +700,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/mariadb'
+          $ref: "#/components/schemas/mariadb"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes MariaDB and general configuration.
 
@@ -751,9 +751,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/postgres'
+          $ref: "#/components/schemas/postgres"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Postgres and general configuration.
 
@@ -805,9 +805,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/redis'
+          $ref: "#/components/schemas/redis"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Redis and general configuration.
 
@@ -832,9 +832,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/memcached'
+          $ref: "#/components/schemas/memcached"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Memcached and general configuration.
 
@@ -864,9 +864,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/splunk'
+          $ref: "#/components/schemas/splunk"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Splunk and general configuration.
 
@@ -932,9 +932,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/rabbitmq'
+          $ref: "#/components/schemas/rabbitmq"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes RabbitMQ and general configuration.
 
@@ -960,7 +960,7 @@ components:
           type: array
           description: A list of messages to send to RabbitMQ
           items:
-            $ref: '#/components/schemas/rabbitmqMessage'
+            $ref: "#/components/schemas/rabbitmqMessage"
         messages_files:
           type: array
           items:
@@ -988,9 +988,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/kafka'
+          $ref: "#/components/schemas/kafka"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Kafka and general configuration.
 
@@ -1045,9 +1045,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/elastic'
+          $ref: "#/components/schemas/elastic"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Elasticsearch and general configuration.
 
@@ -1074,9 +1074,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/kubernetes'
+          $ref: "#/components/schemas/kubernetes"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes k3s and general configuration.
 
@@ -1097,9 +1097,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/cockroachdb'
+          $ref: "#/components/schemas/cockroachdb"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes CockroachDB and general configuration.
 
@@ -1117,9 +1117,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/influxdb'
+          $ref: "#/components/schemas/influxdb"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes InfluxDB and general configuration.
 
@@ -1157,9 +1157,9 @@ components:
       type: object
       properties:
         preset:
-          $ref: '#/components/schemas/cassandra'
+          $ref: "#/components/schemas/cassandra"
         options:
-          $ref: '#/components/schemas/options'
+          $ref: "#/components/schemas/options"
       description: >
         This request includes Cassandra and general configuration.
 
@@ -1173,7 +1173,7 @@ components:
       description: >
         This object describes Cassandra container.
 
-### preset-request
+    ### preset-request
 
     stop-request:
       type: object
@@ -1190,19 +1190,19 @@ components:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/container'
+            $ref: "#/components/schemas/container"
     invalid-configuration:
       description: Invalid container configuration
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/invalid-start-request'
+            $ref: "#/components/schemas/invalid-start-request"
     start-failed:
       description: Start failed
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/start-failed'
+            $ref: "#/components/schemas/start-failed"
 tags:
   - name: presets
     description: >

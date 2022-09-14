@@ -1,4 +1,4 @@
-module github.com/orlangure/gnomock
+module github.com/johanhugg/gnomock
 
 go 1.17
 

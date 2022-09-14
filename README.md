@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/orlangure/gnomock/raw/master/gnomock.png">
+    <img src="https://github.com/johanhugg/gnomock/raw/master/gnomock.png">
 </div>
 
 # <div align="center">Gnomock – tests without mocks</div>
@@ -15,7 +15,7 @@ test
 
 🕹️ Test actual program behavior and side effects
 
-## <div align="center">[![PkgGoDev](https://pkg.go.dev/badge/github.com/orlangure/gnomock)](https://pkg.go.dev/github.com/orlangure/gnomock) ![Test](https://github.com/orlangure/gnomock/workflows/Test/badge.svg) [![Go Report Card](https://goreportcard.com/badge/github.com/orlangure/gnomock)](https://goreportcard.com/report/github.com/orlangure/gnomock) [![codecov](https://codecov.io/gh/orlangure/gnomock/branch/master/graph/badge.svg?token=F0XYPSEIMK)](https://codecov.io/gh/orlangure/gnomock)</div>
+## <div align="center">[![PkgGoDev](https://pkg.go.dev/badge/github.com/johanhugg/gnomock)](https://pkg.go.dev/github.com/johanhugg/gnomock) ![Test](https://github.com/johanhugg/gnomock/workflows/Test/badge.svg) [![Go Report Card](https://goreportcard.com/badge/github.com/johanhugg/gnomock)](https://goreportcard.com/report/github.com/johanhugg/gnomock) [![codecov](https://codecov.io/gh/orlangure/gnomock/branch/master/graph/badge.svg?token=F0XYPSEIMK)](https://codecov.io/gh/orlangure/gnomock)</div>
 
 Gnomock is an integration and end-to-end testing toolkit. It uses Docker to create **temporary containers** for application dependencies, **setup** their **initial state** and **clean them up** in the end. Gnomock allows to test the code with **no mocks** wherever possible.
 
@@ -55,7 +55,7 @@ External `DOCKER_HOST` support is experimental. It cannot be reliably tested at 
 See the following example to get started:
 
 ```
-go get github.com/orlangure/gnomock
+go get github.com/johanhugg/gnomock
 ```
 
 Setting up a **Postgres** container with schema setup example:
@@ -69,8 +69,8 @@ import (
 	"testing"
 
 	_ "github.com/lib/pq" // postgres driver
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/postgres"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/postgres"
 )
 
 func TestDB(t *testing.T) {
@@ -92,7 +92,7 @@ func TestDB(t *testing.T) {
 }
 ```
 
-See package [reference](https://pkg.go.dev/github.com/orlangure/gnomock?tab=doc). For Preset documentation, refer to [Presets](#official-presets) section.
+See package [reference](https://pkg.go.dev/github.com/johanhugg/gnomock?tab=doc). For Preset documentation, refer to [Presets](#official-presets) section.
 
 ### Using Gnomock in other languages
 
@@ -102,30 +102,30 @@ If you use Go, please refer to [Using Gnomock in Go applications](#using-gnomock
 
 The power of Gnomock is in the Presets. Existing Presets with their supported<sup>\*</sup> versions are listed below.
 
-<small>*\* **Supported** versions are tested as part of CI pipeline. Other versions might work as well.*</small>
+<small>_\* **Supported** versions are tested as part of CI pipeline. Other versions might work as well._</small>
 
+| Preset                                                       | Go package                                                                        | Go API                                                                                  | Supported versions                        | arm64 |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------- | ----- |
+| [Localstack](https://github.com/localstack/localstack) (AWS) | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/localstack)  | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/localstack?tab=doc)  | `0.12.2`, `0.13.1`, `0.14.0`              | ✅    |
+| Splunk                                                       | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/splunk)      | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/splunk?tab=doc)      | `8.0.2`                                   | ❌    |
+| Redis                                                        | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/redis)       | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/redis?tab=doc)       | `5.0.10`, `6.0.9`                         | ✅    |
+| Memcached                                                    | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/memcached)   | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/memcached?tab=doc)   | `1.6.9`                                   | ✅    |
+| MySQL                                                        | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/mysql)       | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/mysql?tab=doc)       | `5.7.32`, `8.0.22`                        | ✅    |
+| MariaDB                                                      | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/mariadb)     | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/mariadb?tab=doc)     | `10.5.8`                                  | ✅    |
+| PostgreSQL                                                   | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/postgres)    | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/postgres?tab=doc)    | `10.15`, `11.10`, `12.5`, `13.1`          | ✅    |
+| Microsoft SQL Server                                         | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/mssql)       | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/mssql?tab=doc)       | `2017-latest`, `2019-latest`              | ❌    |
+| MongoDB                                                      | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/mongo)       | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/mongo?tab=doc)       | `3.6.21`, `4.4`                           | ✅    |
+| RabbitMQ                                                     | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/rabbitmq)    | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/rabbitmq?tab=doc)    | `3.8.9-alpine`, `3.8.9-management-alpine` | ✅    |
+| Kafka                                                        | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/kafka)       | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/kafka?tab=doc)       | `2.5.1-L0`                                | ❌    |
+| Elasticsearch                                                | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/elastic)     | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/elastic?tab=doc)     | `5.6`, `6.8.13`, `7.9.3`                  | ✅    |
+| Kubernetes                                                   | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/k3s)         | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/k3s?tab=doc)         | `v1.19.12`                                | ❌    |
+| CockroachDB                                                  | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/cockroachdb) | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/cockroachdb?tab=doc) | `v19.2.11`, `v20.1.10`                    | ✅    |
+| InfluxDB                                                     | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/influxdb)    | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/influxdb?tab=doc)    | `2.0.4-alpine`                            | ✅    |
+| Cassandra                                                    | [Go package](https://github.com/johanhugg/gnomock/tree/master/preset/cassandra)   | [Reference](https://pkg.go.dev/github.com/johanhugg/gnomock/preset/cassandra?tab=doc)   | `4.0`, `3`                                | ✅    |
 
-| Preset | Go package | Go API | Supported versions | arm64 |
-|--------|------------|--------|--------------------|-------|
-[Localstack](https://github.com/localstack/localstack) (AWS) | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/localstack) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/localstack?tab=doc) | `0.12.2`, `0.13.1`, `0.14.0` | ✅
-Splunk | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/splunk) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/splunk?tab=doc) | `8.0.2` | ❌
-Redis | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/redis) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/redis?tab=doc) | `5.0.10`, `6.0.9` | ✅
-Memcached | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/memcached) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/memcached?tab=doc) | `1.6.9` | ✅
-MySQL | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/mysql) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/mysql?tab=doc) | `5.7.32`, `8.0.22` | ✅
-MariaDB | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/mariadb) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/mariadb?tab=doc) | `10.5.8` | ✅
-PostgreSQL | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/postgres) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/postgres?tab=doc) |  `10.15`, `11.10`, `12.5`, `13.1` | ✅
-Microsoft SQL Server | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/mssql) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/mssql?tab=doc) | `2017-latest`, `2019-latest` | ❌
-MongoDB | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/mongo) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/mongo?tab=doc) | `3.6.21`, `4.4` | ✅
-RabbitMQ | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/rabbitmq) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/rabbitmq?tab=doc) | `3.8.9-alpine`, `3.8.9-management-alpine` | ✅
-Kafka | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/kafka) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/kafka?tab=doc) | `2.5.1-L0` | ❌
-Elasticsearch | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/elastic) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/elastic?tab=doc) | `5.6`, `6.8.13`, `7.9.3` | ✅
-Kubernetes | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/k3s) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/k3s?tab=doc) | `v1.19.12` | ❌
-CockroachDB | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/cockroachdb) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/cockroachdb?tab=doc) | `v19.2.11`, `v20.1.10` | ✅
-InfluxDB | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/influxdb) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/influxdb?tab=doc) | `2.0.4-alpine` | ✅
-Cassandra | [Go package](https://github.com/orlangure/gnomock/tree/master/preset/cassandra) | [Reference](https://pkg.go.dev/github.com/orlangure/gnomock/preset/cassandra?tab=doc) | `4.0`, `3` | ✅
 <!-- new presets go here -->
 
-It is possible to use Gnomock [directly from Go](https://pkg.go.dev/github.com/orlangure/gnomock#StartCustom) code without any presets. HTTP API only allows to setup containers using presets that exist in this repository.
+It is possible to use Gnomock [directly from Go](https://pkg.go.dev/github.com/johanhugg/gnomock#StartCustom) code without any presets. HTTP API only allows to setup containers using presets that exist in this repository.
 
 ## Similar projects
 
@@ -137,9 +137,9 @@ Gnomock is not the only project that aims to simplify integration and end-to-end
 These projects are amazing, and they give plenty of flexibility and power to their users. There are many things that are possible with them, but are impossible with Gnomock. Still, below is a short list of things that sometimes give Gnomock an advantage:
 
 - **Gnomock tries to provide a batteries-included solution**. Gnomock has a growing number of Presets, each one implementing an integration with a popular external service. For every Preset, there already is a number of "invisible" utilities that transparently relieve you from implementing them yourself:
-  - __Built-in health check function__ that you don't even need to know it exists. It makes sure you only get control over a container when it is ready to use.
-  - __Wrappers for some of the configuration__ exposed by the container, such as default username/password. You can easily provide your own credentials to connect to the container.
-  - __Seed data ingestion__ for your convenience. Sometimes you just need to make sure your queries work given some data. Gnomock puts your data in there with a single line of code. Sometimes you only test a program that consumes messages from Kafka, and Gnomock produces the messages for you with another line of code.
+  - **Built-in health check function** that you don't even need to know it exists. It makes sure you only get control over a container when it is ready to use.
+  - **Wrappers for some of the configuration** exposed by the container, such as default username/password. You can easily provide your own credentials to connect to the container.
+  - **Seed data ingestion** for your convenience. Sometimes you just need to make sure your queries work given some data. Gnomock puts your data in there with a single line of code. Sometimes you only test a program that consumes messages from Kafka, and Gnomock produces the messages for you with another line of code.
 - **Simple API** that does not expose anything that happens "under the hood" most of the time. Yet Gnomock allows some additional configuration and custom Preset implementation whenever necessary.
 - Gnomock's vision includes **being useful not only in Go** projects, but in any projects via HTTP. It already supports almost all its features over HTTP layer and has a clear OpenAPI spec.
 - Gnomock has a friendly **garden gnome mascot**😻

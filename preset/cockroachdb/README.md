@@ -1,6 +1,6 @@
 # Gnomock CockroachDB
 
-Gnomock CockroachDB is a [Gnomock](https://github.com/orlangure/gnomock) preset for
+Gnomock CockroachDB is a [Gnomock](https://github.com/johanhugg/gnomock) preset for
 running tests against a real CockroachDB container, without mocks.
 
 ```go
@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/preset/cockroachdb"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/preset/cockroachdb"
 	"github.com/stretchr/testify/require"
 )
 
@@ -94,4 +94,3 @@ func TestPreset_wrongQueriesFile(t *testing.T) {
 	require.NoError(t, gnomock.Stop(c))
 }
 ```
-

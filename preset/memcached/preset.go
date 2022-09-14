@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/orlangure/gnomock"
-	"github.com/orlangure/gnomock/internal/registry"
+	"github.com/johanhugg/gnomock"
+	"github.com/johanhugg/gnomock/internal/registry"
 )
 
 const defaultVersion = "1.6.9"
